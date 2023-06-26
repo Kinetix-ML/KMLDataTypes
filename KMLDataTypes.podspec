@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'KMLDataTypes/Classes/**/*'
+  s.source_files = 'Source/KMLDataTypes/Classes/**/*'
   
   # s.resource_bundles = {
   #   'KMLDataTypes' => ['KMLDataTypes/Assets/*.png']

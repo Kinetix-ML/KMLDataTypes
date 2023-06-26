@@ -1,0 +1,6 @@
+framework module Pods_KMLDataTypes_Example {
+  umbrella header "Pods-KMLDataTypes_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

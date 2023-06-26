@@ -1,0 +1,4 @@
+module KMLDataTypes {
+    header "/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build/KMLDataTypes-Swift.h"
+    requires objc
+}

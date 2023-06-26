@@ -1,0 +1,6 @@
+framework module Pods_KMLDataTypes_Tests {
+  umbrella header "Pods-KMLDataTypes_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

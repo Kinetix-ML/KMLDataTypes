@@ -171,7 +171,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				90229C2FE1F1D0B7D368288D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,24 +329,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KMLDataTypes_Tests/Pods-KMLDataTypes_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90229C2FE1F1D0B7D368288D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KMLDataTypes_Example/Pods-KMLDataTypes_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KMLDataTypes/KMLDataTypes.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KMLDataTypes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KMLDataTypes_Example/Pods-KMLDataTypes_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

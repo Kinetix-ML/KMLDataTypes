@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build/master.swiftdeps"
+  },
+  "/Users/maxwellstone/Code/KML/KMLDataTypes/Sources/KMLDataTypes/Classes/KMLDataTypes.swift": {
+    "dependencies": "/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build/Classes/KMLDataTypes.d",
+    "object": "/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build/Classes/KMLDataTypes.swift.o",
+    "swiftmodule": "/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build/Classes/KMLDataTypes~partial.swiftmodule",
+    "swift-dependencies": "/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build/Classes/KMLDataTypes.swiftdeps"
+  }
+}

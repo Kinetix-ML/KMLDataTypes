@@ -1,0 +1,80 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "KMLDataTypes-debug.module": ["<KMLDataTypes-debug.module>"]
+  "KMLDataTypesPackageTests-debug.test": ["<KMLDataTypesPackageTests-debug.test>"]
+  "KMLDataTypesTests-debug.module": ["<KMLDataTypesTests-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<KMLDataTypes-debug.module>"]
+  "test": ["<KMLDataTypes-debug.module>","<KMLDataTypesPackageTests-debug.test>","<KMLDataTypesTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/maxwellstone/Code/KML/KMLDataTypes/Sources/KMLDataTypes/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/maxwellstone/Code/KML/KMLDataTypes/Tests/KMLDataTypesTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "<KMLDataTypes-debug.module>":
+    tool: phony
+    inputs: ["/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build/Classes/KMLDataTypes.swift.o","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.swiftmodule"]
+    outputs: ["<KMLDataTypes-debug.module>"]
+
+  "<KMLDataTypesPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesPackageTests.xctest/Contents/MacOS/KMLDataTypesPackageTests"]
+    outputs: ["<KMLDataTypesPackageTests-debug.test>"]
+
+  "<KMLDataTypesTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesTests.build/KMLDataTypesTests.swift.o","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesTests.swiftmodule"]
+    outputs: ["<KMLDataTypesTests-debug.module>"]
+
+  "C.KMLDataTypes-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/maxwellstone/Code/KML/KMLDataTypes/Sources/KMLDataTypes/Classes/KMLDataTypes.swift"]
+    outputs: ["/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build/Classes/KMLDataTypes.swift.o","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.swiftmodule"]
+    executable: "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "KMLDataTypes"
+    module-output-path: "/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.swiftmodule"
+    import-paths: ["/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build"
+    objects: ["/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build/Classes/KMLDataTypes.swift.o"]
+    other-args: ["-target","arm64-apple-macosx10.13","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build/KMLDataTypes-Swift.h","-color-diagnostics","-sdk","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk","-F","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Xcc","-isysroot","-Xcc","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk","-Xcc","-F","-Xcc","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-sdk","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk","-F","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/maxwellstone/Code/KML/KMLDataTypes/Sources/KMLDataTypes/Classes/KMLDataTypes.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.KMLDataTypesPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.build/Classes/KMLDataTypes.swift.o","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesTests.build/KMLDataTypesTests.swift.o"]
+    outputs: ["/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesPackageTests.xctest/Contents/MacOS/KMLDataTypesPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/KMLDataTypesPackageTests.xctest/Contents/MacOS/KMLDataTypesPackageTests"
+    args: ["/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug","-o","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesPackageTests.xctest/Contents/MacOS/KMLDataTypesPackageTests","-module-name","KMLDataTypesPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.5/macosx","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesTests.swiftmodule","-sdk","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk","-F","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Xcc","-isysroot","-Xcc","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk","-Xcc","-F","-Xcc","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-sdk","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk","-F","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.KMLDataTypesTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/maxwellstone/Code/KML/KMLDataTypes/Tests/KMLDataTypesTests/KMLDataTypesTests.swift","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypes.swiftmodule"]
+    outputs: ["/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesTests.build/KMLDataTypesTests.swift.o","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesTests.swiftmodule"]
+    executable: "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "KMLDataTypesTests"
+    module-output-path: "/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesTests.swiftmodule"
+    import-paths: ["/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesTests.build"
+    objects: ["/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/KMLDataTypesTests.build/KMLDataTypesTests.swift.o"]
+    other-args: ["-target","arm64-apple-macosx13.0","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/maxwellstone/Code/KML/KMLDataTypes/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics","-sdk","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk","-F","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Xcc","-isysroot","-Xcc","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk","-Xcc","-F","-Xcc","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-sdk","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk","-F","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/maxwellstone/Code/KML/KMLDataTypes/Tests/KMLDataTypesTests/KMLDataTypesTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/maxwellstone/Code/KML/KMLDataTypes/Sources/KMLDataTypes/","/Users/maxwellstone/Code/KML/KMLDataTypes/Tests/KMLDataTypesTests/","/Users/maxwellstone/Code/KML/KMLDataTypes/Package.swift","/Users/maxwellstone/Code/KML/KMLDataTypes/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

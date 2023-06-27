@@ -66,10 +66,10 @@ public struct Times {
     public var inference: TimeInterval
     public var postprocessing: TimeInterval
     public var total: TimeInterval { preprocessing + inference + postprocessing }
-    public init(preprocessing: TimeInterval, inference: TimeInterval, postProcessing: TimeInterval) {
+    public init(preprocessing: TimeInterval, inference: TimeInterval, postprocessing: TimeInterval) {
         self.preprocessing = preprocessing
         self.inference = inference
-        self.postprocessing = inference
+        self.postprocessing = postprocessing
     }
 }
 /// A person detected by a pose estimation model.

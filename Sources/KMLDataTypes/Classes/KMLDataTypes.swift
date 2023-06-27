@@ -66,9 +66,18 @@ public struct Times {
     public var inference: TimeInterval
     public var postprocessing: TimeInterval
     public var total: TimeInterval { preprocessing + inference + postprocessing }
+    public init(preprocessing: TimeInterval, inference: TimeInterval, postProcessing: TimeInterval) {
+        self.preprocessing = preprocessing
+        self.inference = inference
+        self.postprocessing = inference
+    }
 }
 /// A person detected by a pose estimation model.
 public struct Person {
     public var keyPoints: [KeyPoint]
     public var score: Float32
+    public init(keyPoints: [KeyPoint], score: Float32) {
+        self.keyPoints = keyPoints
+        self.score = score
+    }
 }

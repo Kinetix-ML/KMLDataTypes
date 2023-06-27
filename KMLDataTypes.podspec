@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KMLDataTypes'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'Set of tyep class definitions for use with Kinetix ML computer vision products'
 
 # This description is used to generate tags and improve search results.

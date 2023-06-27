@@ -2,7 +2,6 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
-
 let package = Package(
     name: "KMLDataTypes",
     products: [
@@ -19,5 +18,6 @@ let package = Package(
         .testTarget(
             name: "KMLDataTypesTests",
             dependencies: ["KMLDataTypes"]),
-    ]
+    ],
+    swiftLanguageVersions: [SwiftVersion.v5]
 )

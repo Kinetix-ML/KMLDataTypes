@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KMLDataTypes
 
 class ViewController: UIViewController {
 

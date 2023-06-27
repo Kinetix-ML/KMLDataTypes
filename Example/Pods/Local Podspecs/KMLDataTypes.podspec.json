@@ -1,6 +1,6 @@
 {
   "name": "KMLDataTypes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of KMLDataTypes.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/MadeWithStone/KMLDataTypes",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/MadeWithStone/KMLDataTypes.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "Source/KMLDataTypes/Classes/**/*"
+  "source_files": "Sources/KMLDataTypes/Classes/**/*"
 }

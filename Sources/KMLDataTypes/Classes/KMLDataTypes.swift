@@ -61,14 +61,14 @@ public class KPFrame: Decodable, Encodable {
 
 // MARK: Detection result
 /// Time required to run pose estimation on one frame.
-struct Times {
+public struct Times {
   var preprocessing: TimeInterval
   var inference: TimeInterval
   var postprocessing: TimeInterval
   var total: TimeInterval { preprocessing + inference + postprocessing }
 }
 /// A person detected by a pose estimation model.
-struct Person {
+public struct Person {
   var keyPoints: [KeyPoint]
   var score: Float32
 }

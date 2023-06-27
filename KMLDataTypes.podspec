@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KMLDataTypes'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'Set of tyep class definitions for use with Kinetix ML computer vision products'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ This library is meant to be used with other Kinetix ML libraries such as the Mot
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-  s.swift_version = '5.8'
+  s.swift_version = '5.0'
 
   s.source_files = 'Sources/KMLDataTypes/Classes/**/*'
   

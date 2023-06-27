@@ -43,10 +43,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8DCD8D0609059E9DE59785CB /* Pods-KMLDataTypes_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMLDataTypes_Tests.release.xcconfig"; path = "Target Support Files/Pods-KMLDataTypes_Tests/Pods-KMLDataTypes_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8EF18691A4EEB0457C7DD7CE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8EF18691A4EEB0457C7DD7CE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9CF18B3009F056C7B59181DE /* Pods_KMLDataTypes_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KMLDataTypes_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D3C88E4FF8A3A9C17C87043 /* KMLDataTypes.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KMLDataTypes.podspec; path = ../KMLDataTypes.podspec; sourceTree = "<group>"; };
-		EE34583354E10F72335E46BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9D3C88E4FF8A3A9C17C87043 /* KMLDataTypes.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KMLDataTypes.podspec; path = ../KMLDataTypes.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EE34583354E10F72335E46BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,6 @@
 				4DBFC2FDDA6C7A265C646F8F /* Pods-KMLDataTypes_Tests.debug.xcconfig */,
 				8DCD8D0609059E9DE59785CB /* Pods-KMLDataTypes_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
